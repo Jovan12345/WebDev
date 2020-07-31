@@ -1,0 +1,96 @@
+@color: #f5adad34;
+@font: Arial, Helvetica, sans-serif;
+
+
+.mainContainer{
+  width: 65%;
+  height: 100%;
+  background-color: @color;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+
+// Years list
+
+.yearList{
+  text-decoration:none;
+  display:block;
+  border-bottom: solid 2px darkred;
+  padding:5px;
+  width:140px;
+  font-family: @font;
+  margin: 0;
+  .yearListItem{
+    color: black;
+  }
+  &:hover{
+    background: #fa9ce285;
+    .yearListItem{
+      color: white;
+    }
+  }
+  
+}
+
+//header
+.headerButton {
+  font-size: 25px;
+  color: black;
+  align-self: flex-end;
+  padding: .85714286em 1.14285714em;
+  &:hover{
+    color: rgb(201, 201, 201);
+    -webkit-transform: scale(1.2);
+  }
+}
+
+//worldchamps
+.seasonYear{
+  display: inline-block;
+  font-size: larger;
+  margin-right: 88px;
+  margin-bottom: 0;
+}
+
+.champName{
+  display: inline-block;
+  a{
+    color: black;
+    &:hover{
+      color: darkred;
+      font-weight: bolder;
+    }
+  }
+}
+
+.season, .winner{
+  font-size: 22px;
+  display: inline;
+  margin-right: 55px;
+}
+
+.track, .driver{
+  font-size: 22px;
+  display: inline;
+  margin-right: 97px;
+}
+
+// yearly winners
+.descrption{
+  p{
+    display: inline-block;
+    width: 150px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  [data-champion=true]{
+    background: rgba(139, 50, 50, 0.335);
+  }
+}
+
+.yearlyWinnerCaption{
+  margin-bottom: 25px;
+}
